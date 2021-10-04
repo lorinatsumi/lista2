@@ -6,7 +6,18 @@
 
 
 
-idade = int(input("Digite sua idade: ")
-#
-#
-ano = input ("Digite a quantidade de anos trabalhos: ")
+idade = int(input("Digite sua idade: "))
+anos = int(input("Digite a quantidade de anos trabalhados: "))
+
+
+if idade >= 60 and anos >=25:
+  print ("Está qualificado para a aposentadoria")
+
+elif idade >= 65:
+  print ("Está qualificado para a aposentadoria")
+
+elif anos >= 30:
+  print ("Está qualificado para a aposentadoria")
+
+else:
+  print ("Não está qualificado para a aposentadoria")

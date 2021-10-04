@@ -1,19 +1,23 @@
-#5 Escreva um programa que primeiramente peça quantos números serão digitados. Em seguida, ele deve ler cada um dos números, conforme a quantidade indicada, e ao final apresentar a média deles.
-
-soma = 0
-
-n = int(input("Digite quantos números serão digitados: "))
-
-if n > 0:
-
-  for i in range (n):
-    num = int(input("Digite os números: " + str(i + 1) + ": "))
-    soma = soma + num
-
-    media = soma / num
-
-
-print ("A média dos números digitados é: " + str(media))
+#Uma empresa quer verificar se um empregado está qualificado para a aposentadoria ou não. Para estar em condições, um dos seguintes requisitos deve ser satisfeito: 
+#Ter no mínimo 65 anos de idade. 
+#Ter trabalhado no mínimo 30 anos.
+#Ter no mínimo 60 anos e ter trabalhado no mínimo 25 anos. 
+#Com base nas informações acima, faça um algoritmo que leia: a idade e o número de anos trabalhados e imprima se ele está qualificado ou não para a aposentadoria.
 
 
 
+idade = int(input("Digite sua idade: "))
+anos = int(input("Digite a quantidade de anos trabalhados: "))
+
+
+if idade >= 60 and anos >=25:
+  print ("Está qualificado para a aposentadoria")
+
+elif idade >= 65:
+  print ("Está qualificado para a aposentadoria")
+
+elif anos >= 30:
+  print ("Está qualificado para a aposentadoria")
+
+else:
+  print ("Não está qualificado para a aposentadoria")
